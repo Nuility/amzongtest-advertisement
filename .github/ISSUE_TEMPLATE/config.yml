@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 查看文档
+    url: https://github.com/Nuility/amzongtest-advertisement/blob/main/README.md
+    about: 查看项目文档和使用说明
+  - name: 💬 提问讨论
+    url: https://github.com/Nuility/amzongtest-advertisement/discussions
+    about: 在GitHub Discussions中提问和讨论
+  - name: 📋 升级计划
+    url: https://github.com/Nuility/amzongtest-advertisement/blob/main/UPGRADE.md
+    about: 查看v1.0.2升级计划和待办事项

@@ -9,6 +9,9 @@
 [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
 [![Tests](https://img.shields.io/badge/Tests-37%20passed-success.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/Nuility/amzongtest-advertisement)
+
+[📖 文档](docs/USER_MANUAL.md) • [🚀 快速开始](#-快速开始) • [📋 升级计划](UPGRADE.md) • [🤝 贡献](CONTRIBUTING.md) • [📝 更新日志](CHANGELOG.md)
 
 </div>
 
@@ -646,13 +649,22 @@ pytest
 
 ## 🤝 贡献
 
-欢迎贡献代码！请遵循以下步骤：
+欢迎贡献代码！详情请查看 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+### 快速开始
 
 1. Fork 本仓库
 2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+3. 提交更改 (`git commit -m 'feat: Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 创建 Pull Request
+
+### 文档
+
+- [贡献指南](CONTRIBUTING.md) - 如何参与项目开发
+- [行为准则](CODE_OF_CONDUCT.md) - 社区行为规范
+- [更新日志](CHANGELOG.md) - 版本历史
+- [项目结构](PROJECT_STRUCTURE.md) - 文件说明
 
 ---
 
@@ -662,13 +674,21 @@ pytest
 
 ---
 
-## 📞 支持
+## 📞 支持与反馈
 
-如有问题或建议，请：
+### 获取帮助
 
-- 提交 Issue
-- 发送邮件至: support@example.com
-- 查看文档: http://localhost:8000/docs
+- 📖 [完整文档](docs/USER_MANUAL.md)
+- 🐛 [报告Bug](https://github.com/Nuility/amzongtest-advertisement/issues/new?template=bug_report.md)
+- 💡 [功能建议](https://github.com/Nuility/amzongtest-advertisement/issues/new?template=feature_request.md)
+- 💬 [讨论区](https://github.com/Nuility/amzongtest-advertisement/discussions)
+- 📋 [升级计划](UPGRADE.md)
+
+### 社区
+
+- GitHub Issues: 问题追踪
+- GitHub Discussions: 问答讨论
+- Pull Requests: 代码贡献
 
 ---
 
@@ -677,5 +697,7 @@ pytest
 **Built with ❤️ by Amazon Ads Platform Team**
 
 **Powered by 华为云 CodeArts**
+
+[⬆ 返回顶部](#亚马逊广告智能投放平台)
 
 </div>
