@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: amazon-ads
+  labels:
+    app: amazon-ads
+    environment: production
+    managed-by: kubectl
+  annotations:
+    description: "Amazon Ads Intelligence Platform - Production Namespace"

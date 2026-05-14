@@ -1,0 +1,9 @@
+[flake8]
+max-line-length = 100
+exclude = 
+    .git,
+    __pydnice__,
+    venv,
+    .venv,
+    migrations,
+    node_modules

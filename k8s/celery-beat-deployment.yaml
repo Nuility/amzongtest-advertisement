@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-beat
+  namespace: amazon-ads
+  labels:
+    app: amazon-ads
+    component: celery-beat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: amazon-ads
+      component: celery-beat
+  template:
+    metadata:
+      labels:
+        app: amazon-ads
+        component: celery-beat
+    spec:
+      containers:
+      - name: celery-beat
+        image: registry.cn-hangzhou.aliyuncs.com/amazon-ads/backend:v1.0.0
+        imagePullPolicy: Always
+        command: ["celery", "-A", "app.jobs.celery_app", "beat"]
+        args: ["--loglevel=info", "--schedule=/tmp/celerybeat-schedule"]
+        envFrom:
+        - configMapRef:
+            name: app-config
+        - secretRef:
+            name: app-secrets
+        env:
+        - name: C_FORCE_ROOT
+          value: "true"
+        - name: WORKER_TYPE
+          value: "beat"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - "test -f /tmp/celerybeat-schedule"
+          initialDelaySeconds: 30
+          periodSeconds: 30
+          timeoutSeconds: 5
+          failureThreshold: 3
+        volumeMounts:
+        - name: beat-schedule
+          mountPath: /tmp
+      volumes:
+      - name: beat-schedule
+        emptyDir: {}
+      restartPolicy: Always
