@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/Nuility/amzongtest-advertisement)
 
-[📖 文档](docs/USER_MANUAL.md) • [🚀 快速开始](#-快速开始) • [📋 升级计划](UPGRADE.md) • [🤝 贡献](CONTRIBUTING.md) • [📝 更新日志](CHANGELOG.md)
+[📖 文档](docs/USER_MANUAL.md) • [🚀 快速开始](#-快速开始) • [🌐 服务器部署](docs/QUICK_DEPLOY.md) • [📋 升级计划](UPGRADE.md) • [🤝 贡献](CONTRIBUTING.md) • [📝 更新日志](CHANGELOG.md)
 
 </div>
 
